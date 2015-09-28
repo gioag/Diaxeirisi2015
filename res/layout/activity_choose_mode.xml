@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    tools:context="com.anaptyksitil.anaptyksitil3.MainActivity">
+
+    <Button
+                android:id="@+id/btnOn"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnClass"
+                android:layout_centerHorizontal="true"
+                android:text="Παιχνίδι στο διαδίκτυο"
+                android:textSize="50dp"
+                android:onClick="onlinemode" />
+
+            <Button
+                android:id="@+id/btnClass"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:text="Παιχνίδι στην τάξη"
+                android:textSize="50dp" 
+                android:onClick="classmode"/>
+
+            <Button
+                android:id="@+id/btnOff"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/btnOn"
+                android:text="Ατομικό παιχνίδι"
+                android:textSize="50dp" 
+                android:onClick="offlinemode"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+                android:text="Διάλεξε τύπο παιχνιδιού"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="50dp" />
+
+    
+
+</RelativeLayout>

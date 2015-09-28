@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androlearning"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        
+      	 >
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".RegisterActivity"  android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".ChooseLessonActivity" android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".waitForContestActivity" android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".ContestTabsActivity" android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".ResultsActivity" android:screenOrientation="portrait" >
+        </activity>
+        <service android:name="WSlogin"></service>
+        <service android:name="WSgetlessons"></service>
+        <service android:name="WSgetschools"></service>
+        <service android:name="WSregister"></service>
+        <service android:name="WScheckcontest"></service>
+        <service android:name="WSsendlesson"></service>
+        <service android:name="WSsendAnswer"></service>
+        <service android:name="WSfinishedcontest"></service>
+        <service android:name="WSdbrefresh"></service>
+        
+    </application>
+
+</manifest>

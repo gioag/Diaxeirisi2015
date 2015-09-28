@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Εγγραφή"
+        android:textColor="#ffffff"
+        android:textSize="75dp" />
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="340dp"
+        android:text="Ον/μο"
+        android:textColor="#ffffff"
+        android:textSize="55dp" />
+
+    <EditText
+        android:id="@+id/editOnmo"
+        android:layout_width="320dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="610dp"
+        android:layout_marginTop="225dp"
+        android:background="@drawable/textview_bg"
+        android:ems="10"
+        android:singleLine="true" />
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="340dp"
+        android:text="Username"
+        android:textColor="#ffffff"
+        android:textSize="55dp" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="320dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="610dp"
+        android:layout_marginTop="285dp"
+        android:background="@drawable/textview_bg"
+        android:ems="10"
+        android:singleLine="true" />
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="340dp"
+        android:text="Password"
+        android:textColor="#ffffff"
+        android:textSize="55dp" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="320dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="610dp"
+        android:layout_marginTop="345dp"
+        android:background="@drawable/textview_bg"
+        android:ems="10"
+        android:singleLine="true"
+        android:password="true" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="390dp"
+        android:text="Επιλογή Σχολείου"
+        android:textColor="#ffffff"
+        android:textSize="55dp" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:layout_marginTop="540dp"
+        android:textSize="55dp"
+        android:onClick="register" />
+    
+    <Spinner 
+        android:id="@+id/spinner1" 
+        android:layout_width="370dp" 
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="460dp"
+        />
+
+
+</RelativeLayout>

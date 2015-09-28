@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true">
+
+    <TextView
+        android:id="@+id/lessonTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="244dp"
+        android:text="Διάλεξε μάθημα"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40dp" />
+
+    <Spinner
+        android:id="@+id/lessonSpinner"
+        android:layout_width="460dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lessonTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp" />
+
+    <Button
+        android:id="@+id/lessonButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lessonSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="Ξεκίνα!"
+        android:textSize="40dp"
+        android:onClick="start"
+         />
+
+</RelativeLayout>
